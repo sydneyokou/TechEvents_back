@@ -18,6 +18,7 @@ public class TechEventsBackApplication {
 		SpringApplication.run(TechEventsBackApplication.class, args);
 	}
 
+	/*
 	@Bean
 	CommandLineRunner runner(EventRepository repository){
 		return args -> {
@@ -25,7 +26,7 @@ public class TechEventsBackApplication {
 			Session[] sessions1 = {new Session(1,"Using Angular 4 Pipes","Peter Bacon Darwin", 1, "Intermediate", "Learn all about the new pipes in Angular 4,  Given by the famous PBD, president of Angular University (formerly Oxford University)",voters1),
 					new Session(2,"Getting the most out of your dev team","Peter Bacon Darwin", 1, "Intermediate", "Learn all about the new pipes in Angular 4,  Given by the famous PBD, president of Angular University (formerly Oxford University)",voters1)};
 			Event event = new Event(
-					 "Angular Connect BIS",
+					 "Angular Connect Bis",
 					 new Date("9/26/2036"),
 					 "10:00 am",
 					 599.99,
@@ -38,5 +39,5 @@ public class TechEventsBackApplication {
 			repository.insert(event);
 		};
 	}
-
+	*/
 }
