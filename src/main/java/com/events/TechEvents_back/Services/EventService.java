@@ -21,8 +21,10 @@ public class EventService {
         return eventRepository.save(event);
     }
 
-    public Event updateEvent(Event event){
-        return eventRepository.save(event);
+    public Event updateEvent(Event event, String Id){
+        Event eventToUpdate =  findEventById(Id);
+        eventToUpdate.setSessions(event.getSessions());
+        return eventRepository.save(eventToUpdate);
     }
 
     public Event findEventById(String id){
